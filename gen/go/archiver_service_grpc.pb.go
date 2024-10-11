@@ -27,8 +27,6 @@ const (
 //
 // For semantics around ctx use and closing/ending streaming RPCs, please refer to https://pkg.go.dev/google.golang.org/grpc/?tab=doc#ClientConn.NewStream.
 type ServiceClient interface {
-	// rpc Pack(stream PackRequest) returns(stream PackResponse);
-	// rpc Unpack(stream UnpackRequest) returns(stream UnpackResponse);
 	Pack(ctx context.Context, in *PackRequest, opts ...grpc.CallOption) (*PackResponse, error)
 	Unpack(ctx context.Context, in *UnpackRequest, opts ...grpc.CallOption) (*UnpackResponse, error)
 }
@@ -65,8 +63,6 @@ func (c *serviceClient) Unpack(ctx context.Context, in *UnpackRequest, opts ...g
 // All implementations must embed UnimplementedServiceServer
 // for forward compatibility.
 type ServiceServer interface {
-	// rpc Pack(stream PackRequest) returns(stream PackResponse);
-	// rpc Unpack(stream UnpackRequest) returns(stream UnpackResponse);
 	Pack(context.Context, *PackRequest) (*PackResponse, error)
 	Unpack(context.Context, *UnpackRequest) (*UnpackResponse, error)
 	mustEmbedUnimplementedServiceServer()

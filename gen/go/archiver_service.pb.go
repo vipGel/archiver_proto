@@ -25,7 +25,7 @@ type PackRequest struct {
 	sizeCache     protoimpl.SizeCache
 	unknownFields protoimpl.UnknownFields
 
-	FilePath string `protobuf:"bytes,1,opt,name=file_path,json=filePath,proto3" json:"file_path,omitempty"` //  bytes chunk = 2;
+	FilePath string `protobuf:"bytes,1,opt,name=file_path,json=filePath,proto3" json:"file_path,omitempty"`
 }
 
 func (x *PackRequest) Reset() {
@@ -72,7 +72,7 @@ type PackResponse struct {
 	sizeCache     protoimpl.SizeCache
 	unknownFields protoimpl.UnknownFields
 
-	FilePath string `protobuf:"bytes,1,opt,name=file_path,json=filePath,proto3" json:"file_path,omitempty"` //  bytes chunk = 2;
+	FilePath string `protobuf:"bytes,1,opt,name=file_path,json=filePath,proto3" json:"file_path,omitempty"`
 }
 
 func (x *PackResponse) Reset() {
@@ -120,7 +120,7 @@ type UnpackRequest struct {
 	unknownFields protoimpl.UnknownFields
 
 	FilePath  string `protobuf:"bytes,1,opt,name=file_path,json=filePath,proto3" json:"file_path,omitempty"`
-	Extension string `protobuf:"bytes,2,opt,name=extension,proto3" json:"extension,omitempty"` //  bytes chunk = 3;
+	Extension string `protobuf:"bytes,2,opt,name=extension,proto3" json:"extension,omitempty"`
 }
 
 func (x *UnpackRequest) Reset() {
@@ -174,7 +174,7 @@ type UnpackResponse struct {
 	sizeCache     protoimpl.SizeCache
 	unknownFields protoimpl.UnknownFields
 
-	FilePath string `protobuf:"bytes,1,opt,name=file_path,json=filePath,proto3" json:"file_path,omitempty"` //  bytes chunk = 2;
+	FilePath string `protobuf:"bytes,1,opt,name=file_path,json=filePath,proto3" json:"file_path,omitempty"`
 }
 
 func (x *UnpackResponse) Reset() {
