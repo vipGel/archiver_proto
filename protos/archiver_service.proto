@@ -19,7 +19,7 @@ message PackResponse {
 
 message UnpackRequest {
   string file_path = 1;
-  string extension = 2;
+  string file_extension = 2;
 }
 
 message UnpackResponse {

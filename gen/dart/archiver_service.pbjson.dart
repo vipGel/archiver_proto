@@ -42,14 +42,14 @@ const UnpackRequest$json = {
   '1': 'UnpackRequest',
   '2': [
     {'1': 'file_path', '3': 1, '4': 1, '5': 9, '10': 'filePath'},
-    {'1': 'extension', '3': 2, '4': 1, '5': 9, '10': 'extension'},
+    {'1': 'file_extension', '3': 2, '4': 1, '5': 9, '10': 'fileExtension'},
   ],
 };
 
 /// Descriptor for `UnpackRequest`. Decode as a `google.protobuf.DescriptorProto`.
 final $typed_data.Uint8List unpackRequestDescriptor = $convert.base64Decode(
-    'Cg1VbnBhY2tSZXF1ZXN0EhsKCWZpbGVfcGF0aBgBIAEoCVIIZmlsZVBhdGgSHAoJZXh0ZW5zaW'
-    '9uGAIgASgJUglleHRlbnNpb24=');
+    'Cg1VbnBhY2tSZXF1ZXN0EhsKCWZpbGVfcGF0aBgBIAEoCVIIZmlsZVBhdGgSJQoOZmlsZV9leH'
+    'RlbnNpb24YAiABKAlSDWZpbGVFeHRlbnNpb24=');
 
 @$core.Deprecated('Use unpackResponseDescriptor instead')
 const UnpackResponse$json = {
